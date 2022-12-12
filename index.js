@@ -8,8 +8,9 @@ fightButton.addEventListener("click", function () {
     // When the user clicks on the "Pick Fighters" button, pick two random 
     // emoji fighters and display them as i.e. "🦀 vs 🐢" in the "stage" <div>.
 
-    const randomIndexOne = Math.floor (MAth.random()*fighters.length)
-    const randomIndexTwo = Math.floor(Math.random()*fighters.length)
+    
+    const randomIndexOne = Math.floor(Math.random() * fighters.length)
+    const randomIndexTwo = Math.floor(Math.random() * fighters.length)
     stageEl.textContent = `${fighters[randomIndexOne]} vs ${fighters[randomIndexTwo]}`
 
    
